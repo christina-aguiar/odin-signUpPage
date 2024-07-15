@@ -3,9 +3,14 @@
     src: url(Norse-Bold.otf);
 }
 
+html {
+    max-height: 100vh;
+}
 body {
     margin: 0;
     display: flex;
+    height: 100vh;
+    box-sizing: border-box;
 }
 
 .backgroundContainer {
@@ -40,18 +45,77 @@ body {
 }
 
 .formHeader {
-    padding: 25px;
+    padding: 0 25px;
 }
 
 
 .formContainer {
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     justify-content: space-evenly;
+    box-sizing: border-box;
 }
 
 fieldset {
-    border: 2px blue ;
-    border-style: solid none;
-    padding: 25px;
+    border-width: 0px;
+    padding: 15px;
+    box-shadow: 0px -4px 20px 5px #abaaaa75;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
+
+fieldset>h3 {
+    margin: 5px;
+}
+.inputsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.labelInput {
+    width: 40%;
+    display: flex;
+    justify-content: start;
+    margin: 5px 0px;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+button {
+    margin: 10px 20px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(255 152 0 / 78%);
+    color: white;
+    font-weight: 600;
+}
+
+input {
+    width: 70%;
+    outline: none;
+    border: 2px #E5E7EB solid;
+    border-radius: 4px;
+    height: 22px;
+}
+
+input:focus {
+    border: 2px blue solid;
+    box-shadow: 0px 1px 2px;
+}
+
+input[type="password"]:invalid {
+    border: 2px red solid;
+} 
+
+a {
+    color: rgb(255 152 0 / 78%)
+}
+
+p {
+    margin: 0 20px;
+}
+
