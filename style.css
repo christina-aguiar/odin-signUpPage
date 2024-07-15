@@ -54,6 +54,7 @@ body {
     flex-direction:column;
     justify-content: space-evenly;
     box-sizing: border-box;
+    width: 100%;
 }
 
 fieldset {
