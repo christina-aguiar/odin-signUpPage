@@ -1,1 +1,1 @@
-# odin-signUpPage
+Odin Project's sign up form assignment.
