@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'myFont';
+    src: url(Norse-Bold.otf);
+}
+
+body {
+    margin: 0;
+    display: flex;
+}
+
+.backgroundContainer {
+    display: flex;
+    position: relative;
+}
+
+.backgroundImg {
+    height: 100vh;
+}
+
+.logoContainer>p {
+    font-family: myFont;
+    color: white;
+    font-size: 10vh;
+    margin-left: 20px;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(255 152 0 / 78%);
+    height: 20vh;
+    position: absolute;
+    top: 30%;
+    width: 100%;
+}
+
+.logoImg {
+    height: 15vh;
+}
+
+.formHeader {
+    padding: 25px;
+}
+
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+fieldset {
+    border: 2px blue ;
+    border-style: solid none;
+    padding: 25px;
+}
