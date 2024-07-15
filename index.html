@@ -28,7 +28,8 @@
         </div>
         <form>
             <fieldset>
-                <h4>Let's do this</h4>
+                <h3>Let's do this</h3>
+                <div class="inputsContainer">
             <div class="labelInput">
                 <label for="name">first name</label>
                 <input type="text" name="name" id="name">
@@ -45,18 +46,19 @@
                 <label for="phone">phone number</label>
                 <input type="tel" name="phone" id="phone">
             </div>
-            <div class="password">
+            <div class="labelInput">
                 <label for="password">password</label>
-                <input type="password" name="password" id="password">
+                <input type="password" name="password" id="password" required>
             </div>
-            <div class="password">
-                <label for="confirmPassword">password</label>
-                <input type="password" name="confirmPassword" id="confirmPassword">
+            <div class="labelInput">
+                <label for="confirmPassword">confirm password</label>
+                <input type="password" name="confirmPassword" id="confirmPassword" required>
             </div>
+        </div>
         </form>
     </fieldset>
     <button>Create Account</button>
-    <p>Already have an account? <a href="">Log in</a></p>
+    <p>Already have an account? <a href=""> Log in</a></p>
     </div>
 </body>
 
